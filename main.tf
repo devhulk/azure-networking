@@ -1,8 +1,8 @@
 //--------------------------------------------------------------------
 // Variables
-variable "networking_environment" {}
-variable "networking_region" {}
-variable "networking_team_name" {}
+variable "environment" {}
+variable "region" {}
+variable "team_name" {}
 
 //--------------------------------------------------------------------
 // Modules
@@ -11,7 +11,7 @@ module "networking" {
   source  = "app.terraform.io/gerald-tfc-business/networking/azure"
   version = "0.0.1"
 
-  environment = "${var.networking_environment}"
-  region = "${var.networking_region}"
-  team_name = "${var.networking_team_name}"
+  environment = "${var.environment}"
+  region = "${var.region}"
+  team_name = "${var.team_name}"
 }
