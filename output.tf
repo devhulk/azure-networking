@@ -3,7 +3,7 @@ output "vnet_id" {
 }
 
 output "vnet_name" {
-    value = module.networking.name
+    value = module.networking.vnet_name
 }
 
 output "address_space" {
