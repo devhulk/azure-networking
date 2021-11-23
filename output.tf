@@ -13,3 +13,4 @@ output "address_space" {
 output "subnets" {
     value = module.networking.subnets
 }
+
