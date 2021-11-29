@@ -6,6 +6,10 @@ output "resource_group_id" {
     value = module.networking.resource_group_id
 } 
 
+output "resource_group_location" {
+    value = module.networking.resource_group_location
+} 
+
 output "vnet_id" {
     value = module.networking.vnet_id 
 }
